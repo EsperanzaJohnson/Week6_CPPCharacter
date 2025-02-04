@@ -13,6 +13,7 @@ class AWeek6_CPPCharacterGameMode : public AGameModeBase
 
 public:
 	AWeek6_CPPCharacterGameMode();
+	virtual void StartPlay() override;
 };
 
 

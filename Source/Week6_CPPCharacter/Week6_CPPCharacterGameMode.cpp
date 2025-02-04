@@ -13,3 +13,11 @@ AWeek6_CPPCharacterGameMode::AWeek6_CPPCharacterGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 }
+
+void AWeek6_CPPCharacterGameMode::StartPlay()
+{
+	Super::StartPlay();
+	check(GEngine != nullptr);
+
+	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Purple, TEXT("Hello World, this is CPPCharacterGameMode!!"));
+}
